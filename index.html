@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+ <head>
+    <title>Cntct Frm</title>
+     <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href='//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+ 
+</head>   
+
+<body>
+    
+    
+    <div class="jumbotron">
+    
+        <h1 class="text-center">Cntct Frm<h1>
+     		<!-- ==============================================
+		CONTACT
+		=============================================== -->
+		<section id="contact" class="add-padding">
+            <br>
+			<div class="container text-center">
+				
+				<div class="row">
+				
+					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+					
+						<h1 class="big-text">Contact Me</h1>
+						
+						<p class="lead">I am a Cntct Frm. 
+                        </p>
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>
+					
+					</div>
+				
+					<!--=== Contact Form ===-->
+
+					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="https://httpbin.org/post" method="post" novalidate>
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-name">Name</label>
+						  <div class="controls">
+							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" type="text" data-error-empty="Please enter your name">
+							<i class="fa fa-user"></i>
+						  </div>
+						</div><!-- End name input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-mail">Email</label>
+						  <div class=" controls">
+							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+							<i class="fa fa-envelope"></i>
+						  </div>
+						</div><!-- End email input -->
+						
+						<div class="form-group">
+						  <label class="control-label" for="contact-message">Message</label>
+							<div class="controls">
+								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" rows="6" data-error-empty="Please enter your message"></textarea>
+								<i class="fa fa-comment"></i>
+							</div>
+						</div><!-- End textarea -->
+						
+						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+						<input type="hidden" name="submitted" id="submitted" value="true" />
+						
+					</form><!-- End contact-form -->
+					
+				</div>
+				
+			</div>
+		
+		</section>   
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/js/contact.js" type="text/javascript"></script>
+
+</body>
+</html>
